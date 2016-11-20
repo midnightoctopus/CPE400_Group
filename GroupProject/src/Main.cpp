@@ -25,6 +25,12 @@
 #include "OrderedSetClass.h"
 #include "GraphClass.h"
 #include "SimpleVector.cpp"
+#include <BaseStation.h>
+//#include <lemon/list_graph.h>
+//#include <boost/graph/graph_traits.hpp>
+//#include <boost/graph/undirected_graph.hpp>
+//#include <iterator>
+//#include <algorithm>
 
 using namespace std;
 
@@ -37,11 +43,19 @@ using namespace std;
 
 // Main function implementation  //////////////////////////////////////////////
 
-int  main()
+
+
+
+
+int main()
 {
 
+    
     return 0;
 }
+
+
+
 
 
 
