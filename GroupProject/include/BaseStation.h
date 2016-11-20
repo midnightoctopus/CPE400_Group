@@ -23,6 +23,7 @@
 #include "Drone.h"
 #include <iostream>
 #include <vector>
+#include <tgmath.h>
 
 using namespace std;
 
@@ -36,7 +37,9 @@ struct DisObj
 {
     int x;
     int y;
+    int distance;
     int id;
+    bool isActive;
 };
 
 class BaseStation
@@ -46,6 +49,8 @@ class BaseStation
     BaseStation();
 
     ~BaseStation();
+
+    bool InitDisObj(int x, int y);
      
     bool AddDrone();
 
@@ -57,19 +62,17 @@ class BaseStation
     
     bool CheckDroneCount();
 
-    bool InitCoordinates(int x, int y);
-    
-    void CalculateDistance(int x, int y);
+    int CalcDistance(int x, int y);
 
-    void PrintLetters();
+    int CalcNumDrones(int distance);
+
+    void Print();
 
   private:
 
     GraphClass* graph;
 
     std::vector<Drone*> drone_objects;
-
-    std::vector<Drone*> drone_states;
 
     std::vector<DisObj*> dis_objects; 
 

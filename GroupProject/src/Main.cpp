@@ -52,14 +52,15 @@ int main()
 
     BaseStation base;
 
-    for(int i = 0; i < 36; i++ )
+    for(int index = 0; index < 36; index++ )
     {
         base.AddDrone();
     }
+    base.InitDisObj(50,30);
+    base.InitDisObj(100,100);
+    base.InitDisObj(80,20); 
 
-    base.PrintLetters();
-
-     
+    base.Print();
     
     return 0;
 }

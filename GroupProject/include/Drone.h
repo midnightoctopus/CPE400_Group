@@ -42,6 +42,10 @@ class Drone : public VertexType
     int xLoc;
 
     int yLoc;
+
+    int disId;
+
+    bool isCharged;
      
 };
 
