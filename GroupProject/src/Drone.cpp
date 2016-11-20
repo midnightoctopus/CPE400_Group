@@ -25,7 +25,12 @@
 
 Drone::Drone()
 {
+    
+}
 
+Drone::Drone(char letter)
+{
+  vertexLetter = letter;
 }
 
 Drone::~Drone()
@@ -33,6 +38,8 @@ Drone::~Drone()
 
 }
      
+
+
 
 // Terminating precompiler directives  ////////////////////////////////////////
 

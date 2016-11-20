@@ -19,22 +19,29 @@
 // Header files ///////////////////////////////////////////////////////////////
 
 #include <iostream>
+#include "VertexType.h"
 
 using namespace std;
 
 // Class definition  //////////////////////////////////////////////////////////
 
-class Drone
+
+class Drone : public VertexType
 {
+
   public:
     
     Drone();
 
+    Drone(char letter);
+
     ~Drone();
      
-
   private:
 
+    int xLoc;
+
+    int yLoc;
      
 };
 

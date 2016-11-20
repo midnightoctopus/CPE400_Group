@@ -50,6 +50,16 @@ using namespace std;
 int main()
 {
 
+    BaseStation base;
+
+    for(int i = 0; i < 36; i++ )
+    {
+        base.AddDrone();
+    }
+
+    base.PrintLetters();
+
+     
     
     return 0;
 }

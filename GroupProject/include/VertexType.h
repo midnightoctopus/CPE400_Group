@@ -45,6 +45,7 @@ class VertexType
 
        char vertexLetter;
        bool usedState;
+
    };
 
 // Terminating precompiler directives  ////////////////////////////////////////
