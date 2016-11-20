@@ -100,7 +100,12 @@ void BaseStation::PrintLetters()
 
 bool BaseStation::InitCoordinates(int x, int y)
 {
-    DisObj* newDis;
+    static int id = 0;
+    DisObj* newDis = new DisObj;
+    newDis->x = x;
+    newDis->y = y;
+    newDis->id = id;
+    id++;
     dis_objects.push_back(newDis);
 }
     
